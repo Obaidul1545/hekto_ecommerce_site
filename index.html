@@ -1,81 +1,501 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hekto E-commerce</title>
 
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google fonts -->
 
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-    <!-- google fonts -->
-</head>
-<body>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <!-- Navber part start -->
-    <nav>
-        <div class="container">
-            <div class="menu_bar">
-                <div class="logo">
-                    <a href="#">Hekto</a>
-                </div>
-                <div class="menu">
-                    <ul>
-                        <li>
-                          <a class="menu_item active" href="#">Home</a>
-                        </li>
-                        <li>
-                          <a class="menu_item" href="#">Pages</a>
-                        </li>
-                        <li>
-                          <a class="menu_item" href="#">Products</a>
-                        </li>
-                        <li>
-                          <a class="menu_item" href="#">Blog</a>
-                        </li>
-                        <li>
-                          <a class="menu_item" href="#">Shop</a>
-                        </li>
-                        <li>
-                          <a class="menu_item" href="#">Contact</a>
-                        </li>
-                      </ul>
-                </div>
-            </div>
-            <form>
-                <input type="text">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </form>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">Hekto</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <form>
+            <input type="search" />
+            <button>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
         </div>
+      </div>
     </nav>
     <!-- Navber part End -->
 
     <!-- Banner part start -->
     <section id="banner_part">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <span>Best Furniture For Your Castle....</span>
-                    <h1>New Furniture Collection Trends in 2020</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.</p>
-                    <a href="#">Shop Now</a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <span>Best Furniture For Your Castle....</span>
+            <h1>New Furniture Collection Trends in 2020</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in
+              est adipiscing in phasellus non in justo.
+            </p>
+            <a href="#">Shop Now</a>
+          </div>
         </div>
+      </div>
     </section>
     <!-- Banner part End -->
 
     <!-- Featured Products part start -->
     <section id="featured_products">
-        <div class="container"></div>
+      <div class="container">
+        <div class="title">
+          <h2>Featured Products</h2>
+        </div>
+        <div class="products_slide">
+          <div class="product">
+            <div class="image">
+              <img
+                src="images/feature_products_img/chair_1.png"
+                alt="chair_1.png"
+              />
+            </div>
+            <div class="details">
+              <h3>Cantilever chair</h3>
+              <div class="dots">
+                <div class="dot_1"></div>
+                <div class="dot_2"></div>
+                <div class="dot_3"></div>
+              </div>
+              <p>Code - Y523201</p>
+              <span>$42.00</span>
+            </div>
+          </div>
+          <div class="product">
+            <div class="image">
+              <img
+                src="images/feature_products_img/chair_2.png"
+                alt="chair_2.png"
+              />
+            </div>
+            <div class="details">
+              <h3>Cantilever chair</h3>
+              <div class="dots">
+                <div class="dot_1"></div>
+                <div class="dot_2"></div>
+                <div class="dot_3"></div>
+              </div>
+              <p>Code - Y523201</p>
+              <span>$42.00</span>
+            </div>
+          </div>
+          <div class="product">
+            <div class="image">
+              <img
+                src="images/feature_products_img/chair_3.png"
+                alt="chair_3.png"
+              />
+            </div>
+            <div class="details">
+              <h3>Cantilever chair</h3>
+              <div class="dots">
+                <div class="dot_1"></div>
+                <div class="dot_2"></div>
+                <div class="dot_3"></div>
+              </div>
+              <p>Code - Y523201</p>
+              <span>$42.00</span>
+            </div>
+          </div>
+          <div class="product">
+            <div class="image">
+              <img
+                src="images/feature_products_img/chair_4.png"
+                alt="chair_4.png"
+              />
+            </div>
+            <div class="details">
+              <h3>Cantilever chair</h3>
+              <div class="dots">
+                <div class="dot_1"></div>
+                <div class="dot_2"></div>
+                <div class="dot_3"></div>
+              </div>
+              <p>Code - Y523201</p>
+              <span>$42.00</span>
+            </div>
+          </div>
+          <div class="product">
+            <div class="image">
+              <img
+                src="images/feature_products_img/chair_1.png"
+                alt="chair_1.png"
+              />
+            </div>
+            <div class="details">
+              <h3>Cantilever chair</h3>
+              <div class="dots">
+                <div class="dot_1"></div>
+                <div class="dot_2"></div>
+                <div class="dot_3"></div>
+              </div>
+              <p>Code - Y523201</p>
+              <span>$42.00</span>
+            </div>
+          </div>
+          <div class="product">
+            <div class="image">
+              <img
+                src="images/feature_products_img/chair_2.png"
+                alt="chair_2.png"
+              />
+            </div>
+            <div class="details">
+              <h3>Cantilever chair</h3>
+              <div class="dots">
+                <div class="dot_1"></div>
+                <div class="dot_2"></div>
+                <div class="dot_3"></div>
+              </div>
+              <p>Code - Y523201</p>
+              <span>$42.00</span>
+            </div>
+          </div>
+          <div class="product">
+            <div class="image">
+              <img
+                src="images/feature_products_img/chair_3.png"
+                alt="chair_3.png"
+              />
+            </div>
+            <div class="details">
+              <h3>Cantilever chair</h3>
+              <div class="dots">
+                <div class="dot_1"></div>
+                <div class="dot_2"></div>
+                <div class="dot_3"></div>
+              </div>
+              <p>Code - Y523201</p>
+              <span>$42.00</span>
+            </div>
+          </div>
+          <div class="product">
+            <div class="image">
+              <img
+                src="images/feature_products_img/chair_4.png"
+                alt="chair_4.png"
+              />
+            </div>
+            <div class="details">
+              <h3>Cantilever chair</h3>
+              <div class="dots">
+                <div class="dot_1"></div>
+                <div class="dot_2"></div>
+                <div class="dot_3"></div>
+              </div>
+              <p>Code - Y523201</p>
+              <span>$42.00</span>
+            </div>
+          </div>
+          <div class="product">
+            <div class="image">
+              <img
+                src="images/feature_products_img/chair_1.png"
+                alt="chair_1.png"
+              />
+            </div>
+            <div class="details">
+              <h3>Cantilever chair</h3>
+              <div class="dots">
+                <div class="dot_1"></div>
+                <div class="dot_2"></div>
+                <div class="dot_3"></div>
+              </div>
+              <p>Code - Y523201</p>
+              <span>$42.00</span>
+            </div>
+          </div>
+          <div class="product">
+            <div class="image">
+              <img
+                src="images/feature_products_img/chair_2.png"
+                alt="chair_2.png"
+              />
+            </div>
+            <div class="details">
+              <h3>Cantilever chair</h3>
+              <div class="dots">
+                <div class="dot_1"></div>
+                <div class="dot_2"></div>
+                <div class="dot_3"></div>
+              </div>
+              <p>Code - Y523201</p>
+              <span>$42.00</span>
+            </div>
+          </div>
+          <div class="product">
+            <div class="image">
+              <img
+                src="images/feature_products_img/chair_3.png"
+                alt="chair_3.png"
+              />
+            </div>
+            <div class="details">
+              <h3>Cantilever chair</h3>
+              <div class="dots">
+                <div class="dot_1"></div>
+                <div class="dot_2"></div>
+                <div class="dot_3"></div>
+              </div>
+              <p>Code - Y523201</p>
+              <span>$42.00</span>
+            </div>
+          </div>
+          <div class="product">
+            <div class="image">
+              <img
+                src="images/feature_products_img/chair_4.png"
+                alt="chair_4.png"
+              />
+            </div>
+            <div class="details">
+              <h3>Cantilever chair</h3>
+              <div class="dots">
+                <div class="dot_1"></div>
+                <div class="dot_2"></div>
+                <div class="dot_3"></div>
+              </div>
+              <p>Code - Y523201</p>
+              <span>$42.00</span>
+            </div>
+          </div>
+          <div class="product">
+            <div class="image">
+              <img
+                src="images/feature_products_img/chair_1.png"
+                alt="chair_1.png"
+              />
+            </div>
+            <div class="details">
+              <h3>Cantilever chair</h3>
+              <div class="dots">
+                <div class="dot_1"></div>
+                <div class="dot_2"></div>
+                <div class="dot_3"></div>
+              </div>
+              <p>Code - Y523201</p>
+              <span>$42.00</span>
+            </div>
+          </div>
+          <div class="product">
+            <div class="image">
+              <img
+                src="images/feature_products_img/chair_2.png"
+                alt="chair_2.png"
+              />
+            </div>
+            <div class="details">
+              <h3>Cantilever chair</h3>
+              <div class="dots">
+                <div class="dot_1"></div>
+                <div class="dot_2"></div>
+                <div class="dot_3"></div>
+              </div>
+              <p>Code - Y523201</p>
+              <span>$42.00</span>
+            </div>
+          </div>
+          <div class="product">
+            <div class="image">
+              <img
+                src="images/feature_products_img/chair_3.png"
+                alt="chair_3.png"
+              />
+            </div>
+            <div class="details">
+              <h3>Cantilever chair</h3>
+              <div class="dots">
+                <div class="dot_1"></div>
+                <div class="dot_2"></div>
+                <div class="dot_3"></div>
+              </div>
+              <p>Code - Y523201</p>
+              <span>$42.00</span>
+            </div>
+          </div>
+          <div class="product">
+            <div class="image">
+              <img
+                src="images/feature_products_img/chair_4.png"
+                alt="chair_4.png"
+              />
+            </div>
+            <div class="details">
+              <h3>Cantilever chair</h3>
+              <div class="dots">
+                <div class="dot_1"></div>
+                <div class="dot_2"></div>
+                <div class="dot_3"></div>
+              </div>
+              <p>Code - Y523201</p>
+              <span>$42.00</span>
+            </div>
+          </div>
+          <div class="product">
+            <div class="image">
+              <img
+                src="images/feature_products_img/chair_1.png"
+                alt="chair_1.png"
+              />
+            </div>
+            <div class="details">
+              <h3>Cantilever chair</h3>
+              <div class="dots">
+                <div class="dot_1"></div>
+                <div class="dot_2"></div>
+                <div class="dot_3"></div>
+              </div>
+              <p>Code - Y523201</p>
+              <span>$42.00</span>
+            </div>
+          </div>
+          <div class="product">
+            <div class="image">
+              <img
+                src="images/feature_products_img/chair_2.png"
+                alt="chair_2.png"
+              />
+            </div>
+            <div class="details">
+              <h3>Cantilever chair</h3>
+              <div class="dots">
+                <div class="dot_1"></div>
+                <div class="dot_2"></div>
+                <div class="dot_3"></div>
+              </div>
+              <p>Code - Y523201</p>
+              <span>$42.00</span>
+            </div>
+          </div>
+          <div class="product">
+            <div class="image">
+              <img
+                src="images/feature_products_img/chair_3.png"
+                alt="chair_3.png"
+              />
+            </div>
+            <div class="details">
+              <h3>Cantilever chair</h3>
+              <div class="dots">
+                <div class="dot_1"></div>
+                <div class="dot_2"></div>
+                <div class="dot_3"></div>
+              </div>
+              <p>Code - Y523201</p>
+              <span>$42.00</span>
+            </div>
+          </div>
+          <div class="product">
+            <div class="image">
+              <img
+                src="images/feature_products_img/chair_4.png"
+                alt="chair_4.png"
+              />
+            </div>
+            <div class="details">
+              <h3>Cantilever chair</h3>
+              <div class="dots">
+                <div class="dot_1"></div>
+                <div class="dot_2"></div>
+                <div class="dot_3"></div>
+              </div>
+              <p>Code - Y523201</p>
+              <span>$42.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Featured Products part End -->
 
+    <!-- Leatest Products part start -->
+    <section id="leatest_products">
+      <div class="container">
+        <div class="title">
+          <h2>Leatest Products</h2>
+        </div>
+        <div class="products_list">
+          <div class="product_btn">
+            <button type="button" data-filter="all">New Arrival</button>
+            <button type="button" data-filter=".category-a">Best Seller</button>
+            <button type="button" data-filter=".category-b">Featured</button>
+            <button type="button" data-filter=".category-c">
+              Special Offer
+            </button>
+          </div>
+          <div class="my_mixitup">
+            <div class="mix category-a" data-order="1">
+              <img src="images/feature_products_img/chair_1.png" alt="" />
+            </div>
+            <div class="mix category-b" data-order="2">
+              <img src="images/feature_products_img/chair_1.png" alt="" />
+            </div>
+            <div class="mix category-b category-c" data-order="3">
+              <img src="images/feature_products_img/chair_1.png" alt="" />
+            </div>
+            <div class="mix category-a category-d" data-order="4">
+              <img src="images/feature_products_img/chair_1.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Leatest Products part End -->
+
     <!-- Js file link  -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-</body>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
